@@ -7,7 +7,12 @@ const loginFormSubmitHeandler = (event) => {
     email,
     password,
   };
-  email === "" || password === "" ? alert("Заповніть форму") : console.log(formData);
-  event.currentTarget.reset();
+  if (email === "" || password === ""){
+    alert("Заповніть форму"); 
+  }
+    else console.log(formData);
+
+    event.currentTarget.reset();
+
 };
 form.addEventListener("submit", loginFormSubmitHeandler);
