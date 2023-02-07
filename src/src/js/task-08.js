@@ -1,4 +1,5 @@
 const form = document.querySelector(".login-form");
+
 const loginFormSubmitHeandler = (event) => {
   event.preventDefault();
   const email = event.currentTarget.elements.email.value;
@@ -10,9 +11,9 @@ const loginFormSubmitHeandler = (event) => {
   if (email === "" || password === ""){
     alert("Заповніть форму"); 
   }
-    else console.log(formData);
+    console.log(formData);
 
     event.currentTarget.reset();
-
+    
 };
 form.addEventListener("submit", loginFormSubmitHeandler);
