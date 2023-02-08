@@ -9,7 +9,7 @@ const loginFormSubmitHeandler = (event) => {
     password,
   };
   if (email === "" || password === ""){
-    alert("Заповніть форму"); 
+    return alert ("Заповніть форму"); 
   }
     console.log(formData);
 
